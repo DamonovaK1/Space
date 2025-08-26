@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎢</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <textarea id="codeEditor" class="editor" spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" oninput="render()"></textarea>
+    <pre id="error"></pre>
+    <div id="indicator"></div>
+    <div id="hovering-text" class="hovering-text">
+        <span>Made a small piece of art for you all</span>
+    </div>
+    <div id="controls">
+      <div class="controls">
+        <input id="btnToggleView" class="icon" type="checkbox" name="toggleView" onclick="toggleView()">
+        <input id="btnToggleResolution" class="icon" type="checkbox" name="toggleResolution" onchange="toggleResolution()">
+        <input id="btnReset" class="icon" type="checkbox" name="reset" onclick="reset()">
+      </div>
+    </div>
+
+    <script id="fragment-shader" type="x-shader/x-fragment" src="shader.glsl"></script>
+    <script src="script.js"></script>
+</body>
+</html>
